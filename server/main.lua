@@ -94,7 +94,6 @@ RegisterNetEvent("qb-pawnshop:server:pickupMelted", function()
         -- no items melting
         TriggerClientEvent('QBCore:Notify', src, 'You do not have any items being melted')
     end
-<<<<<<< HEAD
     -- for k,v in pairs(item.items) do
     --     meltedAmount = v.amount
     --     for l,m in pairs(v.item.reward) do
@@ -105,9 +104,6 @@ RegisterNetEvent("qb-pawnshop:server:pickupMelted", function()
 
     --     end
     -- end
-=======
-
->>>>>>> b72790d833ac92c168f2f70ccca3ebbd11a53307
     TriggerClientEvent('qb-pawnshop:client:resetPickup', src)
 end)
 
