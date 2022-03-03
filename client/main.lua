@@ -77,19 +77,15 @@ RegisterNetEvent('qb-pawnshop:client:openMenu', function()
 					}
 				}
 			end
-			if canTake then
-				pawnShop[#pawnShop + 1] = {
-					header = "Pickup Melted Items",
-					txt = "",
-					params = {
-						isServer = true,
-						event = "qb-pawnshop:server:pickupMelted",
-						args = {
-							items = meltedItem
-						}
-					}
+			pawnShop[#pawnShop + 1] = {
+				header = "Pickup Melted Items",
+				txt = "",
+				params = {
+					isServer = true,
+					event = "qb-pawnshop:server:pickupMelted",
+					args = {}
 				}
-			end
+			}
 			exports['qb-menu']:openMenu(pawnShop)
 		else
 			QBCore.Functions.Notify("Pawnshop is closed. Come back between "..Config.TimeOpen..":00 AM - "..Config.TimeClosed..':00 PM')
@@ -123,19 +119,15 @@ RegisterNetEvent('qb-pawnshop:client:openMenu', function()
 				}
 			}
 		end
-		if canTake then
-			pawnShop[#pawnShop + 1] = {
-				header = "Pickup Melted Items",
-				txt = "",
-				params = {
-					isServer = true,
-					event = "qb-pawnshop:server:pickupMelted",
-					args = {
-						items = meltedItem
-					}
-				}
+		pawnShop[#pawnShop + 1] = {
+			header = "Pickup Melted Items",
+			txt = "",
+			params = {
+				isServer = true,
+				event = "qb-pawnshop:server:pickupMelted",
+				args = {}
 			}
-		end
+		}
 		exports['qb-menu']:openMenu(pawnShop)
 	end
 end)

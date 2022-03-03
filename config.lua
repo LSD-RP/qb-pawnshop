@@ -14,19 +14,19 @@ Config.EmailMessage = "We finished melting your items. You can come pick them up
 Config.PawnItems = {
     [1] = {
         item = "goldchain",
-        price = math.random(50,100)
+        price = math.random(250,350)
     },
     [2] = {
         item = "diamond_ring",
-        price = math.random(50,100)
+        price = math.random(500,800)
     },
     [3] = {
         item = "rolex",
-        price = math.random(50,100)
+        price = math.random(85,125)
     },
     [4] = {
         item = "10kgoldchain",
-        price = math.random(50,100)
+        price = math.random(150,200)
     },
     [5] = {
         item = "tablet",
@@ -47,6 +47,15 @@ Config.PawnItems = {
         item = "laptop",
         price = math.random(50,100)
     }
+    ,
+    [8] = {
+        item = "goldbar",
+        price = math.random(1000,4000)
+    },
+    [9] = {
+        item = 'cryptostick',
+        price = math.random(1,100)
+    }
 }
 
 Config.MeltingItems = { -- meltTime is amount of time in minutes per item
@@ -54,11 +63,11 @@ Config.MeltingItems = { -- meltTime is amount of time in minutes per item
         item = "goldchain",
         rewards = {
             [1] = {
-                item = "goldbar",
+                item = "goldnug",
                 amount = 2
             }
         },
-        meltTime = 15
+        meltTime = 1
     },
     [2] = {
         item = "diamond_ring",
@@ -68,11 +77,11 @@ Config.MeltingItems = { -- meltTime is amount of time in minutes per item
                 amount = 1
             },
             [2] = {
-                item = "goldbar",
+                item = "goldnug",
                 amount = 1
             }
         },
-        meltTime = 15
+        meltTime = 1
     },
     [3] = {
         item = "rolex",
@@ -82,7 +91,7 @@ Config.MeltingItems = { -- meltTime is amount of time in minutes per item
                 amount = 1
             },
             [2] = {
-                item = "goldbar",
+                item = "goldnug",
                 amount = 1
             },
             [3] = {
@@ -90,7 +99,7 @@ Config.MeltingItems = { -- meltTime is amount of time in minutes per item
                 amount = 1
             }
         },
-        meltTime = 5
+        meltTime = 1
     },
     [4] = {
         item = "10kgoldchain",
@@ -100,10 +109,10 @@ Config.MeltingItems = { -- meltTime is amount of time in minutes per item
                 amount = 5
             },
             [2] = {
-                item = "goldbar",
-                amount = 1
+                item = "goldnug",
+                amount = 3
             }
         },
-        meltTime = 15
+        meltTime = 1
     },
 }
